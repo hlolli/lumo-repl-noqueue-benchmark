@@ -22,7 +22,7 @@
              "wav/70.wav"
              "wav/71.wav"
              "wav/72.wav"])
-b
+
 (defn play [file]
   (.play player file (fn [])))
 

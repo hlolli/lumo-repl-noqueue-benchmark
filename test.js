@@ -3,10 +3,6 @@ const net = require('net');
 
 
 const lumoConnection = new net.Socket();
-// Hacky temp solution
-var logBuffer = "";
-
-let win;
 
 var lumoProcess = spawn('./node_modules/lumo-cljs/bin/lumo',
 			['-n', '5555']);
@@ -21,7 +17,7 @@ lumoProcess.stderr.on('data', (data) => {
 });
 
 lumoProcess.on('close', (code) => {
-    console.log(`csound lumoProcess exited with code ${code}`);
+    console.log(`lumoProcess exited with code ${code}`);
 });
 
 lumoProcess.on('exit', function() {
