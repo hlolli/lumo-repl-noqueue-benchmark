@@ -1,0 +1,15 @@
+{
+    "name": "lumo-repl-queue",
+    "version": "1.0.0",
+    "description": "",
+    "main": "test.js",
+    "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+	"play-sound": "^1.1.1",
+	"lumo-cljs": "^1.8.0-beta"
+    }
+}
